@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- This website template was created by: Bailey Roggen-->
+<html lang="en">
+<head>
+	<title>Bailey Roggen</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<div id="container">
+
+		<!-- Use the header area for the website name or logo-->
+		<!-- nav area to add hyperlinks to other sections within the website for a single page port, but with easy nav-->
+		<header>
+			<p><span class="fancy-font2">Bailey Roggen</span></p>
+			
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li> 
+					<li><a href="#about">About</a></li> 
+					<li><a href="#resume">Resume</a></li>
+					<li><a href="#resume">Contact</a></li>
+				</ul>
+			</nav>
+		
+		</header>
+		
+		<section class="greeting">
+			<div class="greeting-content">
+				<h1>Hello and Welcome!</h1>
+				<p><span class="fancy-font">This is my portfolio. I’m excited to show you my work!</span></p>
+			</div>
+			<img src="images/plant-divider2.png" alt="Decorative vine" class="section-divider">
+		</section>
+		
+		<!-- Sections for nav, yet to decide to put them in main or not -->
+		<!-- Use the main area to add the main content of the webpage-->
+		<main>
+		
+			<section id="home" class="fade-section">
+				<h2><span class="fancy-font2">Hello visitor</span></h2>
+				<p>Welcome to my portfolio! Here you can preveiw my past projects.</p>
+				
+				<div class="project-row">
+					<a href="https://roggenbailey.github.io/PNW1/" target="_blank" class="project-item">
+					  <img src="https://api.microlink.io/?url=https%3A%2F%2Froggenbailey.github.io%2FPNW1%2F&screenshot=true&embed=screenshot.url" alt="Project 1 preview" class="site-thumbnail">
+					  <p>PNW Website Project</p>
+					</a>
+				
+					<a href="https://roggenbailey.github.io/Kitty-Koffee/index.html" target="_blank" class="project-item">
+					  <img src="https://api.microlink.io/?url=https%3A%2F%2Froggenbailey.github.io%2FKitty-Koffee%2Findex.html&screenshot=true&embed=screenshot.url" alt="Project 1 preview" class="site-thumbnail">
+					  <p>Kitty Koffee Website Project</p>
+					</a>
+				</div>
+				
+				<h2><span class="fancy-font2">Other work</span></h2>
+				
+				<div class="project-row">
+					<img src="images/thumb1.jpg" alt="Thumbnail 1" class="thumb" onclick="openModal('images/full1.jpg')">
+					<img src="images/thumb2.jpg" alt="Thumbnail 1" class="thumb" onclick="openModal('images/thumb2.jpg')">
+				</div>
+				
+				<div id="modal" class="modal" onclick="closeModal()">
+					<span class="close">&times;</span>
+					<img id="modal-img" class="modal-content" />
+				</div>
+  
+			</section>
+			
+			<section id="about" class="fade-section" class="about">
+				<h2><span class="fancy-font2">Nice to meet you!</span></h2>
+				<p>Thank you for visiting my portfolio. My name is Bailey Roggen, currenly I am a student at Skagit Valley college pursuing a degree in
+				Front-end Web Development.</p>
+			</section>
+			
+			<section id="resume" class="fade-section">
+				<h2><span class="fancy-font2">Resume</span></h2>
+				
+				<div>
+				<a href="https://drive.google.com/file/d/1XvZ87XJsGJ59eZIvqsnpmg2VWvkkJzN0/view?usp=sharing" target="_blank" class="download-btn">Download Resume</a>
+				</div>
+				
+				<p> </p>
+				
+				<div class="resume-row">
+					<iframe src="https://drive.google.com/file/d/1XvZ87XJsGJ59eZIvqsnpmg2VWvkkJzN0/preview" width="800" height="500" style="border: none;"></iframe>
+					
+					
+				</div>
+	
+			</section>
+		
+		</main>
+		
+		<!--Use the footer area to add webpage footer content-->
+		<footer>
+			<p>&copy; Copyright 2025. All Rights Reserved.</p>
+			<p><a href="mailto:baileyroggen@gmail.com">baileyroggen@gmail.com</a></p>
+		</footer>
+	
+	</div>
+	
+	<script src="css/jquery-3.7.1.min.js"></script>
+	<script src="css/javaScript.js"></script>
+	
+</body>
+</html> 
