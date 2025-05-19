@@ -31,3 +31,48 @@ function closeModal() {
   var modal = document.getElementById("modal");
   modal.style.display = "none";
 }
+
+// Toggle mobile nav menu
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+});
+
+//Form messages
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  const successMessage = document.createElement("p");
+  successMessage.textContent = "Thanks! Your message has been sent.";
+  successMessage.style.color = "green";
+  successMessage.style.display = "none"; // Hidden by default
+  form.appendChild(successMessage);
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          form.reset();
+          successMessage.style.display = "block";
+        } else {
+          alert("Oops! There was a problem submitting your form.");
+        }
+      })
+      .catch((error) => {
+        alert("Error: Could not send message.");
+      });
+  });
+});
