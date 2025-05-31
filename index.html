@@ -37,10 +37,11 @@
 		
 		<section id="greeting-call" class="greeting">
 			<div class="greeting-content">
-				<h1><span class="headers">Hello and Welcome!</span></h1>
-				<p><span id="greeting" class="headers">This is my portfolio. I’m excited to show you my work!</span></p>
+				<h1><span class="welcome-header">Welcome to My Portfolio</span></h1>
+				<p><span id="greeting" class="headers">Here’s where imagination meets execution. I’m thrilled to showcase
+				the projects that reflect my passion, creativity, and attention to detail. Feel free to explore and see what
+				I’ve been creating!</span></p>
 			</div>
-			<img src="images/plant-divider2.png" alt="Decorative vine" class="section-divider">
 		</section>
 		
 		<!-- Sections for nav, yet to decide to put them in main or not -->
@@ -54,18 +55,21 @@
 				<div class="about-content">
 					<img src="images/about.jpg" alt="Personal Photo" class="about-pic">
 					<div>
-					<p>Hi! I’m Bailey Roggen — a passionate and curious multimedia web development student with a love for creating meaningful digital experiences.</p>
+						<p>Hi! I’m Bailey Roggen — a passionate and curious multimedia web development student with a love for creating meaningful digital experiences.</p>
 
-					<p>I'm currently working toward my Associate of Applied Science in Multimedia Web Development at Skagit Valley College (Whidbey Campus), and I’m set
-					to graduate in 2025. Before that, I spent a year at Cerro Coso Community College in California, where I built a solid foundation in digital design 
-					and front-end development.</p>
+						<p>I'm currently working toward my Associate of Applied Science in Multimedia Web Development at Skagit Valley College (Whidbey Campus), and I’m set
+						to graduate in 2025. Before that, I spent a year at Cerro Coso Community College in California, where I built a solid foundation in digital design 
+						and front-end development.</p>
 
-					<p>I really enjoy working on projects where creativity and problem-solving come together. Whether I’m collaborating with a team or alone, I’m
-					always open to feedback and love using it to grow. I also have experience communicating with clients and teammates, and I’m excited to bring that
-					energy into a real-world web development role.</p>
+						<p>I really enjoy working on projects where creativity and problem-solving come together. Whether I’m collaborating with a team or alone, I’m
+						always open to feedback and love using it to grow. I also have experience communicating with clients and teammates, and I’m excited to bring that
+						energy into a real-world web development role.</p>
 
-					<p>Right now, I’m looking for an entry-level position where I can keep learning, level up my skills, and be part of building user-friendly
-					websites.</p>
+						<p>Right now, I’m looking for an entry-level position in web development where I can continue to grow professionally and apply the skills I’ve built
+						through school and personal projects. I’m especially interested in front-end development, UI/UX design, and projects that bring together function and
+						aesthetics. I have hands-on experience with Adobe XD for app and interface design, and I’ve created fully functional websites using HTML, CSS, and
+						JavaScript. I’ve also begun working with MySQL for basic database integration. I’m eager to join a collaborative team where I can contribute to building
+						user-friendly, visually engaging, and accessible digital experiences.</p>
 					</div>
 				</div>
 				
@@ -73,7 +77,7 @@
 		
 			<section id="home" class="fade-section">
 				<h2><span id="heading" class="headers">Created Websites</span></h2>
-				<p>Here is a selection of my past projects, showcasing my skills in HTML, CSS, and JavaScript.</p>
+				<p>Here is a selection of my past projects, showcasing my skills in HTML, CSS, and JavaScript. Github and drive are linked in the footer.</p>
 				
 				<div class="project-row">
 					<a href="https://roggenbailey.github.io/PNW1/" target="_blank" class="project-item">
@@ -81,7 +85,16 @@
 					  <p>PNW Website Project</p>
 					  <p id="work-description">This website began as a class project, which I expanded into an interactive sightseeing guide for the Pacific Northwest.</p>
 					</a>
+					
+					<a href="https://roggenbailey.github.io/Radiance-by-Kenna/" target="_blank" class="project-item">
+					  <img src="https://api.microlink.io/?url=https%3A%2F%2Froggenbailey.github.io%2FRadiance-by-Kenna%2F&screenshot=true&embed=screenshot.url" alt="Project 1 preview" class="site-thumbnail">
+					  <p>Mock Radiance by Kenna</p>
+					  <p id="work-description">This is a fully designed mockup website created as an example of what I can build for a real client in the beauty and wellness industry.
+					  Features include a detailed services section, a professional bio, a sample booking integration using Square Appointments, and responsive design for both desktop and mobile.</p>
+					</a>
+				</div>
 				
+				<div class="project-row">
 					<a href="https://roggenbailey.github.io/Kitty-Koffee/index.html" target="_blank" class="project-item">
 					  <img src="https://api.microlink.io/?url=https%3A%2F%2Froggenbailey.github.io%2FKitty-Koffee%2Findex.html&screenshot=true&embed=screenshot.url" alt="Project 1 preview" class="site-thumbnail">
 					  <p>Kitty Koffee Website Project</p>
@@ -89,12 +102,17 @@
 					</a>
 				</div>
 				
+				<!--<div>
+					<iframe src="https://roggenbailey.github.io/Radiance-by-Kenna/" width="100%" height="500" frameborder="0"></iframe>
+				</div>-->
+					
+				
 				<h2><span id="heading" class="headers">Other work</span></h2>
 				
 				<div class="project-row">
 				
-					<div class="project-item">
-						<img src="images/thumb1.jpg" alt="Thumbnail 1" class="thumb" onclick="openModal('images/full1.jpg')">
+					<div id="app" class="project-item">
+						<img src="images/thumb1.jpg" alt="Thumbnail 1" id="app-thumb" class="thumb" onclick="openModal('images/full1.jpg')">
 						<p>Pet Track</p>
 						<p id="work-description">Pet Track is an app design I created using Adobe XD to help locate and monitor wandering pets. The concept includes in-app GPS tracking, pet registration,
 						and an integrated store for purchasing TrackTags.</p>
@@ -117,13 +135,13 @@
 				<h2><span id="heading" class="fancy-font2 headers">Resume/Contact</span></h2>
 				
 				<div>
-				<a href="https://drive.google.com/file/d/1luhT--Y6icKS6DShbaQ7s3kGLmw_45Ab/view?usp=sharing" target="_blank" class="download-btn">Download Resume</a>
+				<a href="https://drive.google.com/file/d/1ZoVXS7meXSGrDP9mTSXfb4in21CJwrac/view?usp=sharing" target="_blank" class="download-btn">Download Resume</a>
 				</div>
 				
 				<p> </p>
 				
 				<div class="project-row">
-					<iframe src="https://drive.google.com/file/d/1luhT--Y6icKS6DShbaQ7s3kGLmw_45Ab/preview" width="700" height="400" style="border: none;"></iframe>
+					<iframe src="https://drive.google.com/file/d/1ZoVXS7meXSGrDP9mTSXfb4in21CJwrac/preview" width="700" height="400" style="border: none;"></iframe>
 					
 					<form action="https://formspree.io/f/mzzrowbw" method="POST">
 						<label for="name">Name:</label>
@@ -149,6 +167,12 @@
 		<footer>
 			<p>&copy; Copyright 2025. All Rights Reserved.</p>
 			<p><a href="mailto:baileyroggen@gmail.com">baileyroggen@gmail.com</a></p>
+			
+			<div class="logo-links">
+				<a href="https://drive.google.com/drive/folders/1GnhOk3ME2HWF0xniv1x2bUmhHZBuFSMs?usp=sharing"><img src="images/drive-logo.png" alt="Google drive logo" height="30" width="30"></a>
+				<a href="https://github.com/roggenbailey"><img src="images/github-mark.png" alt="Github logo" height="30" width="30"></a>
+			</div>
+			
 		</footer>
 	
 	</div>
