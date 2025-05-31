@@ -9,19 +9,23 @@ body, header, nav, main, footer, h1, div, img {
 /* fonts */
 .heading-font {
 	font-family: 'Great Vibes', cursive;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 #greeting {
-	font-size: 2em;
+	font-size: 1.25em;
 }
 
 #nav {
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .headers {
-	font-size: 1.5em;
+	font-size: 1.25em;
+}
+
+.welcome-header{
+	font-size: 1em;
 }
 
 #work-description {
@@ -35,6 +39,10 @@ body, header, nav, main, footer, h1, div, img {
 	display:flex;
 	justify-content: center;
 	padding-top: 70px;
+}
+
+p{
+	font-size: .80em;
 }
 
 /* Style rules for body and images*/
@@ -114,22 +122,12 @@ nav ul li a:hover {
   background-color: #6B705C;
   color: white;
   padding: 100px 40px 40px;
-  padding-bottom: 80px;
-  height: 500px;
+  padding-bottom: 50px;
 }
 
-img.section-divider {
-  position: absolute;
-  bottom: 75px;
-  left: 0;
-  width: 100%;
-  height: auto;
-  z-index: 5;
-  pointer-events: none
-}
 
 .greeting .greeting-content {
-  max-width: 700px;
+  max-width: 1500px;
   margin-left: 10%;
   text-align: center;
 }
@@ -241,6 +239,12 @@ section h2 {
   margin: 10px;
   border-radius: 8px;
   transition: transform 0.3s ease;
+}
+
+#app-thumb{
+	height: 250px;
+	width: 25%;
+	margin-left: 170px;
 }
 
 .thumb:hover {
@@ -368,6 +372,13 @@ footer p a {
 	text-decoration: none;
 }
 
+.logo-links {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	padding-bottom: 5px;
+}
+
 
 
 /* Begin MOBILE Styles */
@@ -392,7 +403,6 @@ header {
   color: white;
   cursor: pointer;
   position: absolute;
-  top: 1em;
   right: 1.5em;
   font-size: 2em;
   z-index: 1001;
@@ -486,14 +496,10 @@ nav ul {
 }
 
 
-@media (max-width: 767px) { /*add for mobile only ? */
-img.section-divider {
-    display: none !important;
-  }
-
+@media (max-width: 912px) { /*add for mobile only ? */
 
 span#greeting.headers{
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
   
   span.headers  {
@@ -556,5 +562,19 @@ span#greeting.headers{
   .download-btn {
 	  margin: 0 0;
   }
+  
+  p{
+	  font-size: .75em;
+  }
+  
+  p#work-description{
+	  font-size: .75em;
+  }
+  
+  #app-thumb{
+	height: 190px;
+	width: 50%;
+	margin-left: 50px;
+}
 
 }
