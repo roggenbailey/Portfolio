@@ -301,7 +301,7 @@ section h2 {
 .download-btn {
   background-color: #6B705C;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 50px;
   text-decoration: none;
   justify-content: center;
   font-size: 1.2em;
@@ -309,8 +309,8 @@ section h2 {
   transition: background-color 0.3s;
   margin-bottom: 40px;
   display:flex;
-  margin-left: 600px;
-  margin-right: 600px;
+	width: fit-content;
+	justify-self: center;
 }
 
 .download-btn:hover {
@@ -578,3 +578,4 @@ span#greeting.headers{
 }
 
 }
+
