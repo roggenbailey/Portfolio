@@ -186,8 +186,6 @@ section h2 {
   display: flex;
   justify-content: center;
   gap: 40px;
-  max-width: 1000px;
-    margin-left: 200px;
 	padding-top: 20px;
 }
 
@@ -578,4 +576,5 @@ span#greeting.headers{
 }
 
 }
+
 
